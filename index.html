@@ -1,0 +1,64 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="./resources/styles.css">
+    <title>thecodeblock survey</title>
+  </head>
+  <body>
+    <h1 id="title">Software Survey Form</h1>
+    <p id="description">How satisfied are you with the software solution that we provided?</p>
+    <form id="survey-form" action="https://thecodeblock.net.services" method="post">
+    <fieldset>
+      <label id="name-label" for="name">Name<input type="text" id="name" placeholder="Enter Your Name" required></label>
+      <label id="email-label" for="email">Email<input type="email" id="email" placeholder ="Enter Your Email" required></label>
+      <label>
+    <label id="number-label" for="number">Rate our service (out of 10)<input type="number" name="number" id="number" min="1" max="10" placeholder="8"required></label>  
+    <label for="dropdown">Which option best describes your current role? 
+    <select id="dropdown">
+      <option value="">(Select one)</option>
+      <option value="1">Director</option>
+      <option value="2">CEO</option>
+      <option value="3">Business Owner</option>
+      <option value="4">Manger</option>
+      <option value="5">Other</option>
+      </select>
+    </label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>How satisfied are you with the overall performance of the software?</legend>
+        <label for="very-satisfied"><input type="radio" name="software performance" id="very-satisfied" class="inline" value="very-satisfied"checked>Very Satisfied</label>
+        <label for="satisfied"><input type="radio" name="software performance" id="satisfied" class="inline" value="satisfied">Satisfied</label>
+        <label for="neutral"><input type="radio" name="software performance" id="neutral" class="inline" value="neutral">Neutral</label>
+        <label for="dissatisfied"><input type="radio" name="software performance" id="dissatisfied" class="inline" value="dissatisfied">Dissatisfied</label>
+
+</fieldset>
+
+<fieldset>
+  <p> What could we improve in the software? (Check all that apply)</p>
+      <label for ="front-end"><input type="checkbox" id="front-end" class="inline" name="feautures" value="front-end">
+      Front-end
+    </label>
+
+    <label for ="back-end"><input type="checkbox" id="back-end" class="inline" name="feautures" value="back-end">
+      Back-end
+    </label>
+
+    <label for ="data-visual"><input type="checkbox" id="data-visual" class="inline" name="feautures" value="date-visual">
+      Data Visualization
+    </label>
+
+  <label for="comments">Please provide any additional comments or suggestions regarding the software.
+    <textarea id="comments" rows="3" cols="30" placeholder="Add Your Comments"></textarea>
+</fieldset>
+
+<input id="submit" type="submit" value="Submit">
+
+    </form>
+
+  </body>
+
+  </html>
